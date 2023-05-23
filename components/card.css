@@ -1,0 +1,167 @@
+/* Description Card */
+.desc-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  align-items: center;
+}
+.card-title {
+  background-color: #27444a;
+  color: #9f8b76;
+  font-family: 'Cinzel',serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 86px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0px 10px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 10px 0px 10px;
+}
+.card-content h2 {
+  color: #ffff;
+  text-align: center;
+}
+
+/* Character Card */
+.character-card {
+  display: flex;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.character-card img{
+  height: 238px;
+  width: 164.5px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.character-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 8px; 
+  gap: 10px;
+  padding: 10px 10px;
+  transition: ease-out;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.character-content h1{
+  color: #ffff;
+  font-size: 18px;
+  text-overflow: ellipsis;
+}
+
+.character-content p{
+  text-align: start;
+  color: #ffff;
+  font-family: 'Cinzel',serif;
+  line-height: 16px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.character-content:hover{
+  background: rgba(0, 0, 0, 0.54);
+  transition: 200ms ease-out;
+  cursor: default;
+  overflow: hidden;
+}
+.character-content:not(:hover){
+  opacity: 0;
+  transition: 300ms ease-out;
+}
+
+
+
+
+/* Video Card */
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.video-main {
+  height: 213px;
+  background-image: url(./images/image\ 11.png);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video-main a{
+  display: flex;
+  position: absolute;
+}
+
+.video-main img:hover{
+  filter: brightness(1.5);
+  transition: 200ms ease-in-out;
+  transform: scale(1.05);
+}
+
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.video-content h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.overlayvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  z-index: 999;
+}
+
+.overlayvid.active {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.overlayvid-content {
+  position: relative;
+}
+
+.video-iframe {
+  position: relative;
+  width: 100%;
+  
+}
+
+.video-iframe iframe {
+  width: 600px;
+  height: 400px;
+}
