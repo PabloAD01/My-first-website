@@ -12,7 +12,7 @@ export function cardvideo(card){
                 <div class="video-content">
                   <h1>EXPLORA HYRULE</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora incidunt fugiat,
+                    Lorem ipsum dolor adipisicing elit. Hic tempora incidunt fugiat,
                     explicabo earum porro labore rerum id inventore ipsum rem ratione recusandae optio nam
                     debitis voluptates nemo tenetur. Commodi!
                   </p>
